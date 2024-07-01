@@ -1,0 +1,224 @@
+@font-face {
+    font-family: SFPro;
+    src: url(../fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: SFPro;
+    color: #302f2c;
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.img-logo {
+    width: 130px;
+    padding: 10px;
+}
+
+#menu-nav {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    padding: 10px;
+    
+    ul {
+        a {
+            padding: 10px;
+            font-size: 18px;
+            
+            &:hover {
+                background-color: #e0a307;
+                color: #302f2c;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+.boton {
+    margin-bottom: 20px;
+    color: #302f2c;
+    border: #ffbc0d 1px solid;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    &:focus {
+        background-color: #ffbc0d;
+        border-color: #ffbc0d;
+        box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(255, 144, 0, 0.6);
+        outline: 0 none;
+    }
+}
+
+.hero-inicio {
+    background: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+}
+
+.hero-columna__btn {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 100px;
+    
+    button {
+        padding: 20px;
+        background-color: #ffbc0d;
+        color: #302f2c;
+        border-radius: 5px;
+        border: 0;
+        font-size: 14px;
+        box-shadow: 2px 6px 26px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 2px 6px 26px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 2px 6px 26px 0px rgba(0, 0, 0, 0.75);
+        
+        &:hover {
+            transform: scale(1.05);
+            transition: transform 0.1s;
+            background-color: #e0a307;
+        }
+    }
+}
+
+.contenedor-app {
+    display: flex;
+    flex-direction: row;
+    background-color: #e0a307;
+    height: 170px;
+}
+
+.contenido-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.descargar-app {
+    display: flex;
+    
+    img {
+        height: 120px;
+        padding: 5px;
+    }
+}
+
+.descargar-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h2 {
+        font-weight: bolder;
+    }
+}
+
+.boton-app {
+    button {
+        padding: 10px;
+        border: 0;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        
+        a {
+            color: #302f2c;
+        }
+    }
+}
+
+.card {
+    padding: 20px;
+}
+
+/* MEDIAS QUERIES */
+
+@media (max-width: 1200px) {
+    // Aquí puedes agregar tus estilos
+}
+
+@media (max-width: 1024px) {
+    .search-boton {
+        display: none;
+    }
+    #menu-nav {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-boton {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-boton {
+        display: none;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        height: 40vh;
+    }
+    .img-logo {
+        width: 100px;
+    }
+    #menu-nav {
+        display: inline-block;
+        text-align: center;
+        padding: 0;
+        
+        ul {
+            border-bottom: #302f2c 1px solid;
+        }
+    }
+    .hero-inicio {
+        height: 100vh;
+        width: 100vw;
+        background: url(../img/hero-mb.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contenedor-app {
+        height: 350px;
+    }
+    .contenido-app {
+        flex-direction: column;
+        align-items: center;
+    }
+    .descargar-app {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        padding-top: 10px;
+    }
+    .boton-app {
+        margin-bottom: 20px;
+    }
+}
