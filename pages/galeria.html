@@ -1,77 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="McDonalds Argentina - Las mejores hamburgesas del mercado - PROBA LA NUEVA GRAND LEYENDA">
-    <meta name="keywords"  content="mcdonalds trabajo,mcdonalds precios,mcdonalds argentina,mcdonalds cajita feliz,mcdonalds pelicula,mcdonalds juguetes,mcdonalds historia,mcdonalds logo,mcdonalds empleo,mcdonald's abierto ahora,mcdonalds promociones,mcdonalds cumpleaños">
+    <meta name="keywords" content="mcdonalds trabajo,mcdonalds precios,mcdonalds argentina,mcdonalds cajita feliz,mcdonalds pelicula,mcdonalds juguetes,mcdonalds historia,mcdonalds logo,mcdonalds empleo,mcdonald's abierto ahora,mcdonalds promociones,mcdonalds cumpleaños">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../img/mcdonald's.ico" type="image/x-icon">
-    <title>McDonald's - Galeria</title>
+    <title>McDonald's - Productos</title>
 </head>
+
 <body>
     <header class="container">
-        <a href="../index.html"><img class="img-logo" src="../img/mcdonalds logo.png" alt="Logo de McDonald's"></a>
-        <nav id="menu-nav">
-            <ul><a href="../index.html" >Inicio</a></ul>
+        <a href="#" class="col-2"><img class="img-logo" src="../img/mcdonalds logo.png" alt="Logo de McDonald's"></a>
+        <nav id="menu-nav" class="col-8">
+            <ul><a href="../index.html">Inicio</a></ul>
             <ul><a href="productos.html">Productos</a></ul>
             <ul><a href="sobrenosotros.html">Sobre Nosotros</a></ul>
             <ul><a href="contacto.html">Contacto</a></ul>
             <ul><a href="galeria.html">Galeria</a></ul>
         </nav>
-        <section id="buscador">
-            <form action="" method="get" class="rounded align-middle">
+        <section id="buscador" class="col-2">
+            <form action="" method="get" class="search-boton">
                 <input type="search" name="search" id="search" placeholder="Buscar" class="rounded form-control boton">
             </form>
         </section>
-</header>
+    </header>
     <main>
-        <section class="contenedor-galeria">
-            <section class="galeria-productos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </section>
-            <section class="galeria-productos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </section>
-            <section class="galeria-productos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </section>
-            <section class="galeria-productos">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </section>
+        <section class="container p-5">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/carrousel1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrousel2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrousel3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="../img/album1.png" class="card-img-top" width="100%" height="200" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">2 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="../img/album2.png" class="card-img-top" width="100%" height="200" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">5 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="../img/album3.jpg" class="card-img-top" width="100%" height="200" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">4 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="../img/album4.jpg" class="card-img-top" width="100%" height="200" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">6 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="../img/album5.jpg" class="card-img-top" width="100%" height="200" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">19 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="../img/album6.jpg" class="card-img-top" width="100%" height="200" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            </div>
+                            <small class="text-body-secondary">23 mins</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>           
         </section>
     </main>
     <footer>
-        <h2>NOMBRE DE LA EMPRESA</h2>
-        <section class="contenedor-footer__nav">
-            <nav id="footer-nav">
-                <ul><a href="#">Inicio</a></ul>
-                <ul><a href="#">Productos</a></ul>
-                <ul><a href="#">Sobre Nosotros</a></ul>
-                <ul><a href="#">Contacto</a></ul>
-                <ul><a href="#">Galeria</a></ul>
-            </nav>
-        </section>
-        <section class="contenedor-footer__redes">
-            <p>©2024 Facundo Murillo</p>
-            <section class="redes">
-                <svg>IG</svg>
-                <svg>TW</svg>
-                <svg>FB</svg>
-                <svg>GMAIL</svg>
+        <section class="contenedor-app">
+            <section class="contenido-app container">
+                <section class="descargar-app">
+                    <img src="../img/mcdonalds-logo-bg-red.png" alt="Logo McDonalds">
+                    <section class="descargar-textos">
+                        <h2>Descárgate nuestra app</h2>
+                        <p>Descárgate nuestra app y no te pierdas nuestras novedades</p>
+                    </section>
+                </section>
+                <section class="boton-app">
+                    <button><a href="#">Descargar ahora</a></button>
+                </section>
             </section>
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
+
 </html>
